@@ -9,7 +9,7 @@ def pesquisar_cnpj(cnpj):
     response = requests.get(url)
     data = response.json()
 
-    # Capturar os dados relevantes
+    # Capturar os dados relevantes  
     nome_empresa = data["nome"]
     nome_fantasia = data["fantasia"]
     endereco = f"{data['logradouro']}, {data['numero']} - {data['bairro']}"
